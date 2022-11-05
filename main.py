@@ -2,7 +2,7 @@ import os
 import requests
 
 def main():
-    my_input = os.environ["INPUT_USERNAME"]
+    my_input = os.environ["INPUT_USER"]
 
     my_output = f"Hello {my_input}"
 
