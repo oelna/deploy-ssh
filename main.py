@@ -1,9 +1,8 @@
 import os
-import requests  # noqa We are just importing this to prove the dependency installed correctly
-
+import requests
 
 def main():
-    my_input = os.environ["INPUT_MYINPUT"]
+    my_input = os.environ["INPUT_USERNAME"]
 
     my_output = f"Hello {my_input}"
 
