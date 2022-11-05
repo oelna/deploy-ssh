@@ -4,16 +4,19 @@ author: "Arno Richter"
 inputs:
   SERVER:
     description: "SSH server (required)"
-    default: 22
+    required: true 
+    type: string
   PORT:
     description: "SSH port, default is 22"
     default: 22
   USERNAME:
     description: "SSH username (required)"
-    default: ""
+    required: true 
+    type: string
   PASS:
     description: "SSH key (required)"
-    default: ""
+    required: true 
+    type: string
 outputs:
   myOutput:
     description: "Output from the action"
