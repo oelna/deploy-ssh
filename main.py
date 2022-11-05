@@ -15,7 +15,10 @@ def main():
     
     
     # subprocess.call(["rsync", "-Ccavz", "--delete","DJStatic", "username@website"])
-    with open("~/.ssh/id_rsa", "w") as text_file:
+    
+    keyfile = "~/.ssh/id_rsa"
+    os.makedirs(os.path.dirname(keyfile), exist_ok=True)
+    with open(keyfile, "w") as text_file:
         text_file.write("%s" % key)
 
 
