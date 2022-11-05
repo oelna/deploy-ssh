@@ -6,7 +6,7 @@ def main():
     
     user = os.environ["INPUT_USER"]
     key = os.environ["INPUT_PASS"]
-    host = os.environ["INPUT_HOST"]
+    host = os.environ["INPUT_SERVER"]
     port = os.environ["INPUT_PORT"]
 
     my_output = f"Hello {host} at port {port}"
