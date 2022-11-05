@@ -17,6 +17,16 @@ inputs:
     description: "SSH key (required)"
     required: true 
     type: string
+  SOURCE:
+    description: "source dir"
+    required: false
+    default: .
+    type: string
+  TARGET:
+    description: "target dir on the server (default is $HOME)"
+    required: true
+    default: ~
+    type: string
 outputs:
   myOutput:
     description: "Output from the action"
