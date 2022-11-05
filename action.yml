@@ -9,7 +9,7 @@ inputs:
   PORT:
     description: "SSH port, default is 22"
     default: 22
-  USERNAME:
+  USER:
     description: "SSH username (required)"
     required: true 
     type: string
